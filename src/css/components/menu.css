@@ -7,7 +7,7 @@ On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le 
   display: flex; /* Utilise Flexbox pour la mise en page des éléments enfants : https://developer.mozilla.org/fr/docs/Web/CSS/display-inside#flex */
   top: 0%; /* Positionne le menu en haut de la page : https://developer.mozilla.org/fr/docs/Web/CSS/top */
   height: 100%; /* Étend le menu jusqu'en bas de la page */
-  left: 0%; /* Positionne le menu à gauche de la page */
+  left: 5%; /* Positionne le menu à gauche de la page */
   width: 100%; /* Étend le menu jusqu'à droite de la page */
   transition: all 0.4s ease-in-out; /* Définit une transition de 0.4 secondes pour toutes les propriétés, avec un effet d'accélération et de décélération : https://developer.mozilla.org/fr/docs/Web/CSS/transition */
   opacity: 0; /* Rend le menu complètement transparent : https://developer.mozilla.org/fr/docs/Web/CSS/opacity */
@@ -28,7 +28,7 @@ On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le 
 .menu-btn {
   position: relative; /* Positionne le bouton par rapport à son conteneur parent */
   z-index: 3; /* Assure que le bouton est au-dessus des autres éléments */
-  width: 30px; /* Définit la largeur du bouton à 30px */
+  width: 80px; /* Définit la largeur du bouton à 30px */
   transition: all 0.4s ease-in-out; /* Ajoute une transition de 0.4 secondes pour toutes les propriétés, avec un effet d'accélération et de décélération */
 }
 
@@ -37,6 +37,6 @@ On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le 
  */
 .menu-btn[aria-expanded="true"] {
   transform: rotate(
-    90deg
+    360deg
   ); /* Fait pivoter le bouton de menu de 90 degrés lorsqu'il est en état "expanded" */
 }
